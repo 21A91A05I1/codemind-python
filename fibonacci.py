@@ -8,4 +8,3 @@ while n-2:
     a=b
     b=c
     n-=1
-    
