@@ -22,4 +22,4 @@ for i in range(n,m+1):
     k=fun(i)
     if k==c:
         print(i,end=' ')
-        
+ 
