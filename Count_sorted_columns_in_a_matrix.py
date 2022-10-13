@@ -1,16 +1,14 @@
 n,m=map(int,input().split())
-c=0
-p=[]
-for l in range(m):
-    p.append([])
+mat=[]
 for i in range(n):
-    a=list(map(int,input().split()))
-    for j in range(m):
-        p[j].append(a[j])
-for k in p:
-    b=k.copy()
-    b.sort()
-    q=b[::-1]
-    if k==b or k==q:
-        c+=1
-print(c)
+    v=[]
+    v=list(map(int,input().split()))
+    mat.append(v)
+s=0
+for i in range(m):
+    k=[]
+    for j in range(n):
+        k.append(mat[j][i])
+    if k==sorted(k) or k==sorted(k,reverse=True):
+        s+=1
+print(s)
