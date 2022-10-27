@@ -1,7 +1,8 @@
-a=input().replace(' ','')
-a=a.lower()
-s=[]
-for i in a:
-    if i not in s:
-        s.append(i)
-print(''.join(sorted(s)))
+n=input().lower()
+temp=[]
+for i in n:
+    if n.count(i)==1 and i!=" ":
+        temp.append(i)
+        temp.sort()
+for i in temp:
+    print(i,end='')
