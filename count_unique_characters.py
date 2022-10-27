@@ -1,7 +1,11 @@
-s1=input()
-s1=s1.lower()
-l=[]
-for i in s1:
-    if s1.count(i)==1 and i!=' ':
-        l.append(i)
-print(len(l))
+n=input()
+n=n.lower()
+n=list(n)
+k=n.copy()
+k=set(k)
+k=list(k)
+c=0
+for i in range(len(k)):
+    if(n.count(k[i])==1 and k[i]!=" "):
+        c+=1
+print(c)
